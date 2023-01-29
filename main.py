@@ -1,6 +1,8 @@
 import pandas as pd
 import matplotlib.pyplot as plot
 
+plot.style.use("ggplot")
+
 dataframe = pd.read_csv('planilha.csv', delimiter=",")
 print(dataframe.shape)
 print(dataframe.columns)
@@ -16,7 +18,6 @@ print(list(dataframe.columns.tolist()))
 
 print(dataframe['Year'].max())
 
-plot.style.use("ggplot")
 plot.xlabel("Year")
 plot.ylabel("Population")
 
