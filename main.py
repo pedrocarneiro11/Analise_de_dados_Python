@@ -19,7 +19,10 @@ print(dataframe['Year'].max())
 plot.style.use("ggplot")
 plot.xlabel("Year")
 plot.ylabel("Population")
+
 x = dataframe['Year']
 y = dataframe['Population']
-plot.bar(x, y)
+plot.plot(x, y, color='black')
+plot.draw()
+# plot.savefig("grafico.png") # gera uma figura png
 plot.show()
